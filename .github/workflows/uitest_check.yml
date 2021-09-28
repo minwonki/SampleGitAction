@@ -33,7 +33,7 @@ jobs:
       
       # Decoding keystore make key
       - name: Decoding keystore make key
-        run: echo Tmzt0ESuXG1yaickGMMUAaAXVFbxtI5qDnHQcgD7fc0= > key
+        run: echo ${{secret.BUILD_KEY}} > key
       
       # Decoding keystore 
       - name: Decoding keystore
